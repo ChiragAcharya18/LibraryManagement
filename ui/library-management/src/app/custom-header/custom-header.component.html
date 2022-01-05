@@ -1,0 +1,18 @@
+<header>
+    <h1 class="logo">Library</h1>
+    <nav>
+      <ul class="nav_links" >
+          <li *ngIf="isAdmin && isLogin"><a routerLink="/add-book">Add Book</a></li>
+          <li *ngIf="isAdmin && isLogin"><a routerLink="/book-search-and-update">Update </a></li>
+          <li *ngIf="isAdmin && isLogin"><a routerLink="/view-orders">Orders</a></li>
+          <li *ngIf="!isAdmin && isLogin"><a routerLink="/student-profile">Profile</a></li>
+          <li *ngIf="!isAdmin && isLogin"><a routerLink="/studentbooks">Books</a></li>
+          <li *ngIf="!isAdmin && isLogin"><a routerLink="/studentorders">Orders </a></li>
+          <!-- <li *ngIf="!isAdmin"><a routerLink="/tempcomp">Temp</a></li> -->
+      </ul>
+    </nav>
+    <!-- <a class="cta" [hidden]="isLogin" routerLink="/login" ><button>Login</button></a> -->
+    <a class="ctr" [hidden]="!isLogin" (click)="onSignout()" ><button>Signout</button></a>
+  </header>
+
+

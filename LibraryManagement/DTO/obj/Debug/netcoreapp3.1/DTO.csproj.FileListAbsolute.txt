@@ -1,0 +1,13 @@
+D:\LibraryManagement\LibraryManagement\DTO\bin\Debug\netcoreapp3.1\DTO.deps.json
+D:\LibraryManagement\LibraryManagement\DTO\bin\Debug\netcoreapp3.1\DTO.dll
+D:\LibraryManagement\LibraryManagement\DTO\bin\Debug\netcoreapp3.1\DTO.pdb
+D:\LibraryManagement\LibraryManagement\DTO\obj\Debug\netcoreapp3.1\DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\LibraryManagement\LibraryManagement\DTO\obj\Debug\netcoreapp3.1\DTO.AssemblyInfoInputs.cache
+D:\LibraryManagement\LibraryManagement\DTO\obj\Debug\netcoreapp3.1\DTO.AssemblyInfo.cs
+D:\LibraryManagement\LibraryManagement\DTO\obj\Debug\netcoreapp3.1\DTO.csproj.CoreCompileInputs.cache
+D:\LibraryManagement\LibraryManagement\DTO\obj\Debug\netcoreapp3.1\DTO.dll
+D:\LibraryManagement\LibraryManagement\DTO\obj\Debug\netcoreapp3.1\DTO.pdb
+D:\LibraryManagement\LibraryManagement\DTO\bin\Debug\netcoreapp3.1\DTO.runtimeconfig.json
+D:\LibraryManagement\LibraryManagement\DTO\bin\Debug\netcoreapp3.1\DTO.runtimeconfig.dev.json
+D:\LibraryManagement\LibraryManagement\DTO\obj\Debug\netcoreapp3.1\DTO.csproj.AssemblyReference.cache
+D:\LibraryManagement\LibraryManagement\DTO\obj\Debug\netcoreapp3.1\DTO.genruntimeconfig.cache

@@ -1,0 +1,53 @@
+<app-custom-header></app-custom-header>
+<section class="contact-from p-4 m-2" >
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 mx-auto">
+        <div class="form-wrapper">
+          <div class="row">
+            <div class="col-md-12">
+              <h4>Add Book</h4>
+            </div>
+          </div>
+          <form _lpchecked="1">
+            <div class="row">
+
+              <div class="col-md-8 p-2">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Book Title" name="title" [(ngModel)]="title">
+                </div>
+              </div>
+
+              <div class="col-md-8 p-2">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Author Name" name="author" [(ngModel)]="author">
+                </div>
+              </div>
+              <div class="col-md-8 p-2">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Cost" name="cost" [(ngModel)]="cost">
+                </div>
+              </div>
+              <div class="col-md-8 p-2">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Quantity" name="quantity" [(ngModel)]="quantity">
+                </div>
+              </div>
+
+              <div class="col-md-8 p-2">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Book Id" hidden name="bookId" [(ngModel)]="bookId">
+                </div>
+              </div>
+            </div>
+            <div class="mt-3">
+              <button class="btn btn-primary" (click)="onAddBook()">Add Book</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<app-footer></app-footer>

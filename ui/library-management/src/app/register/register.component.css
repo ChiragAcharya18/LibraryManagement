@@ -1,0 +1,219 @@
+/* *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
+  }
+  body {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    font-family: Poppins, sans-serif;
+    background:#FAF2EA;
+  }
+  a{
+    text-decoration:none;
+    text-transform:capitalize;
+    color:#2505b4;
+    font-size:.8rem;
+  }
+  a:hover,a:focus {
+    color:#2505b4;
+  }
+  .container{
+    margin:0;
+    padding:0;
+  }
+  .login-form{
+    padding: 10px;
+    width:480px;
+    margin: auto 550px;
+    background:#141414;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:1rem;
+    padding:3rem;
+    box-shadow:2px 7px 8px rgba(0,0,0,.3);
+    border-radius:3px;
+    color:#AAA9A7;
+    text-align:center;
+  }
+  .title{
+    margin-bottom:1rem;
+  }
+  .input-field {
+    width:100%;
+    padding:0;
+    margin:0;
+  }
+  .input-field input {
+    width:100%;
+    background:transparent;
+    border:none;
+    outline:none;
+    color: #7C848C;
+    border-bottom:1px solid #2505b4;
+    padding:.6rem;
+  }
+  .input-field input:focus {
+    border-color: #2505b4;
+  }
+  
+  .input {
+    display:flex;
+    justify-content:space-between;
+    font-size:.9rem;
+  }
+  input[type="checkbox"]{
+    background:transparent;
+    padding:1rem;
+  }
+  .terms {
+    font-size:.7rem;
+    margin-top:1rem;
+    padding: 0 3rem;
+  }
+  .terms strong{
+    text-decoration:underline;
+    cursor:pointer;
+  }
+  .btn {
+    padding:.7rem;
+    border:none;
+    border-radius:3px;
+    font-size:1rem;
+    font-weight:bold;
+    outline:none;
+    cursor:pointer;
+    text-transform:capitalize;
+    transition:.2s ease-in-out;
+    filter:brightness(1);
+  }
+  .login {
+    background:#2505b4;
+  }
+  .create{
+    width:100%;
+    font-weight:normal;
+  }
+  .btn:hover {
+    filter: brightness(.8);
+    box-shadow: 2px 5px 8px rgba(0,0,0,.2);
+  }
+  .new-user{
+    margin-top:1rem;
+  }
+  .new-user p{
+    padding-bottom:.5rem;
+    font-size:.8rem;
+  }
+  
+  @media screen and (max-width:500px){
+    .login-form{
+      width:calc(70% - 1rem);
+      margin:1rem;
+    }
+    .terms{
+      padding:0;
+    }
+  }
+  @media screen and (max-width:350px){
+    .login-form{
+      width:calc(60% - 1rem);
+      margin:1rem;
+    }
+    .terms{
+      padding:0;
+    }
+  } */
+
+
+  /* Login template 2 */
+  @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body {
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+.login {
+  width: 360px;
+  padding: 4% 0 0;
+  margin: auto;
+  font-family: 'Comfortaa', cursive;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  border-radius: 10px;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+}
+
+.form input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  height: 45px;
+  border: 0;
+  border-radius: 5px;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: 'Comfortaa', cursive;
+}
+
+.form input:focus {
+  background: #dbdbdb;
+}
+
+.form button {
+  font-family: 'Comfortaa', cursive;
+  text-transform: uppercase;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.loginBtn {
+  color: #FFFFFF;
+  outline: 0;
+  border: 0;
+  background: #4b6cb7;
+}
+.loginBtn:active {
+  background: #395591;
+}
+
+.register {
+  background-color: white;
+  border: solid 2px red;
+  /* border-color: #f44336; */
+  color: red;
+}
+
+.register:active {
+  background: #f44336;
+  color: white;
+}
+
+
+
+
+.form span {
+  font-size: 55px;
+  color: #4b6cb7;
+  padding-bottom: 20px;
+}
+

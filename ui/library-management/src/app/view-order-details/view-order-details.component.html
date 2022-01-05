@@ -1,0 +1,159 @@
+<!-- 
+<div class="container" *ngIf="(orders === undefined || orders === null); else elseBlock" style="min-height: 55vh;" >
+  No Orders yet
+</div>
+<ng-template #elseBlock>
+  <div class="container table-responsive py-5" style="min-height: 55vh;" > 
+
+    <div class="btn-group">
+      <button type="button" class="btn btn-outline btn-success p-2 m-2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Filter
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" (click)="onFilter('all')">All Orders</a></li>
+        <li><a class="dropdown-item" (click)="onFilter('ret')">Returned</a></li>
+        <li><a class="dropdown-item" (click)="onFilter('nrt')">Not Returned</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">######</a></li>
+      </ul>
+    </div>
+
+    <table class="table table-bordered table-hover">
+      <thead class="thead-dark bg-dark text-light">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">OrderId</th>
+          <th scope="col">Book Name</th>
+          <th scope="col">Author</th>
+          <th scope="col">Student Name</th>
+          <th scope="col">USN</th>
+          <th scope="col">Role</th>
+          <th scope="col">Order Date</th>
+          <th scope="col">Return Date</th>
+        </tr>
+      </thead>
+      <tbody class="bg-light text-dark">
+        <tr *ngFor="let order of orders;  index as i; ">
+          <th scope="row">{{i+1}}</th>
+          <td>ORD{{order.orderId}} </td>
+          <td>{{order.bookTitle}} </td>
+          <td>{{order.authorName}} </td>
+          <td>{{order.studentName}} </td>
+          <td>{{order.usn}} </td>
+          <td>{{order.roleName}} </td>
+          <td>{{order.orderDate.split('T')[0]}} </td>
+          <td>{{!order.returnDate? "Not Returned":order.returnDate.split('T')[0]}} </td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+</ng-template>
+
+
+     -->
+     <app-custom-header></app-custom-header>
+
+<script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+<!-- Snippet -->
+<section class="flex flex-col justify-center antialiased bg-gray-100 text-gray-600 min-h-screen p-4">
+  <div class="h-full">
+    <div class="btn-group">
+      <button type="button" class="btn btn-sm btn-success p-2 m-2 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Filter
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" (click)="onFilter('all')">All Orders</a></li>
+        <li><a class="dropdown-item" (click)="onFilter('ret')">Returned</a></li>
+        <li><a class="dropdown-item" (click)="onFilter('nrt')">Not Returned</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">######</a></li>
+      </ul>
+    </div>
+    <!-- Table -->
+    <div class="w-full max-w-2xl mx-auto bg-white shadow-lg rounded-sm border border-gray-200">
+      <header class="px-3 py-2 border-b border-gray-100">
+        <h2 class="font-semibold text-gray-800">Orders</h2>
+      </header>
+      <div class="p-3">
+        <div class="overflow-x-auto">
+          <table class="table-auto w-100">
+            <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-50">
+              <tr>
+                <th class="p-2 whitespace-nowrap">
+                  <div class="font-semibold text-left">#</div>
+                </th>
+                <th class="p-2 whitespace-nowrap">
+                  <div class="font-semibold text-left">Order Id</div>
+                </th>
+                <th class="p-2 whitespace-nowrap">
+                  <div class="font-semibold text-left">Book Title</div>
+                </th>
+                <th class="p-2 whitespace-nowrap">
+                  <div class="font-semibold text-left">Author Name</div>
+                </th>
+                <th class="p-2 whitespace-nowrap">
+                  <div class="font-semibold text-left">Student Name</div>
+                </th>
+                <th class="p-2 whitespace-nowrap">
+                  <div class="font-semibold text-left">USN </div>
+                </th>
+                <th class="p-2 whitespace-nowrap">
+                  <div class="font-semibold text-left">Role </div>
+                </th>
+                <th class="p-2 whitespace-nowrap">
+                  <div class="font-semibold text-left">Order Date</div>
+                </th>
+                <th class="p-2 whitespace-nowrap">
+                  <div class="font-semibold text-center">Return Date</div>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="text-sm divide-y divide-gray-100"  >
+              <tr *ngFor="let order of orders | paginate: { 
+                                                itemsPerPage: 5,
+                                                currentPage: p }  ;  index as i; ">
+                <td class="p-2 whitespace-nowrap">
+                  <div class="flex items-center">
+                    <!-- <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3"><img class="rounded-full"
+                        src="https://raw.githubusercontent.com/cruip/vuejs-admin-dashboard-template/main/src/images/user-36-05.jpg"
+                        width="40" height="40" alt="Alex Shatov"></div> -->
+                    <div class="font-medium text-gray-800">{{i+1}}</div>
+                  </div>
+                </td>
+                <td class="p-2 whitespace-nowrap">
+                  <div class="font-semibold text-left">{{order.orderId}}</div>
+                </td>
+                <td class="p-2 whitespace-nowrap">
+                  <div class="font-semibold text-left">{{order.bookTitle}}</div>
+                </td>
+                <td class="p-2 whitespace-nowrap">
+                  <div class="font-semibold text-left">{{order.authorName}}</div>
+                </td>
+                <td class="p-2 whitespace-nowrap">
+                  <div class="font-semibold text-left">{{order.studentName}}</div>
+                </td>
+                <td class="p-2 whitespace-nowrap">
+                  <div class="font-semibold text-left">{{order.usn}} </div>
+                </td>
+                <td class="p-2 whitespace-nowrap">
+                  <div class="font-semibold text-left">{{order.roleName}}</div>
+                </td>
+                <td class="p-2 whitespace-nowrap">
+                  <div class="font-semibold text-left">{{order.orderDate.split('T')[0]}}</div>
+                </td>
+                <td class="p-2 whitespace-nowrap">
+                  <div class="font-semibold text-center" [ngClass]="!order.returnDate? 'NotReturned':order.returnDate.split('T')[0]" >{{!order.returnDate? "Not Returned":order.returnDate.split('T')[0]}} </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <pagination-controls  class="text-center" (pageChange)="p = $event" > </pagination-controls>
+    </div>
+  </div>
+</section>
+
+<app-footer></app-footer>
+

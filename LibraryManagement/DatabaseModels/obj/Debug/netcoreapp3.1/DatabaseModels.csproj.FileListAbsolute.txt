@@ -1,0 +1,16 @@
+D:\LibraryManagement\LibraryManagement\DatabaseModels\bin\Debug\netcoreapp3.1\DatabaseModels.deps.json
+D:\LibraryManagement\LibraryManagement\DatabaseModels\bin\Debug\netcoreapp3.1\DatabaseModels.dll
+D:\LibraryManagement\LibraryManagement\DatabaseModels\bin\Debug\netcoreapp3.1\DatabaseModels.pdb
+D:\LibraryManagement\LibraryManagement\DatabaseModels\obj\Debug\netcoreapp3.1\DatabaseModels.csproj.AssemblyReference.cache
+D:\LibraryManagement\LibraryManagement\DatabaseModels\obj\Debug\netcoreapp3.1\DatabaseModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\LibraryManagement\LibraryManagement\DatabaseModels\obj\Debug\netcoreapp3.1\DatabaseModels.AssemblyInfoInputs.cache
+D:\LibraryManagement\LibraryManagement\DatabaseModels\obj\Debug\netcoreapp3.1\DatabaseModels.AssemblyInfo.cs
+D:\LibraryManagement\LibraryManagement\DatabaseModels\obj\Debug\netcoreapp3.1\DatabaseModels.csproj.CoreCompileInputs.cache
+D:\LibraryManagement\LibraryManagement\DatabaseModels\obj\Debug\netcoreapp3.1\DatabaseModels.dll
+D:\LibraryManagement\LibraryManagement\DatabaseModels\obj\Debug\netcoreapp3.1\DatabaseModels.pdb
+D:\LibraryManagement\LibraryManagement\DatabaseModels\bin\Debug\netcoreapp3.1\DatabaseModels.runtimeconfig.json
+D:\LibraryManagement\LibraryManagement\DatabaseModels\bin\Debug\netcoreapp3.1\DatabaseModels.runtimeconfig.dev.json
+D:\LibraryManagement\LibraryManagement\DatabaseModels\obj\Debug\netcoreapp3.1\DatabaseModels.genruntimeconfig.cache
+D:\LibraryManagement\LibraryManagement\DatabaseModels\bin\Debug\netcoreapp3.1\DTO.dll
+D:\LibraryManagement\LibraryManagement\DatabaseModels\bin\Debug\netcoreapp3.1\DTO.pdb
+D:\LibraryManagement\LibraryManagement\DatabaseModels\obj\Debug\netcoreapp3.1\DatabaseModels.csproj.CopyComplete

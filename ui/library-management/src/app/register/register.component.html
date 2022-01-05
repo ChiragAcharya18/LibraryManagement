@@ -1,0 +1,58 @@
+<!-- 
+<div class="container m-2" style="text-align: center;justify-content: center;">
+    <div class="login-form">
+      <h2 class="title">Register</h2>
+
+      <div class="input-field">
+        <label for="name"></label>
+        <input type="name" placeholder="Enter your name" name="name" id="name" [(ngModel)]="userDetails.Name">
+      </div>
+
+      <div class="input-field">
+        <label for="uname"></label>
+        <input type="uname" placeholder="Enter your Username" name="uname" id="uname" [(ngModel)]="userDetails.userName">
+      </div>
+
+      <div class="input-field">
+        <label for="email"></label>
+        <input type="email" placeholder="Enter your email address" name="email" id="email" [(ngModel)]="userDetails.email">
+      </div>
+      <div class="input-field">
+        <label for="pass"></label>
+        <input type="password" placeholder="**********" name="pass" id="pass" [(ngModel)]="userDetails.password">
+      </div>
+      <div class="input">
+        <div>
+          <input type="checkbox" name="" id="remember">
+          <label for="remember">Keep me signed in? </label>
+        </div>
+        <a href="#">forgot your password?</a>
+      </div>
+  
+      <p class="terms">By Continue, you agree our <strong>Condition of use</strong> and <strong>Privacy Notice</strong>.</p>
+  
+      <button class="btn login" (click)="onRegister()" >Sign Up</button>
+  
+      <div class="new-user">
+        <p>Already have an account?</p>
+        <button class="btn btn-light text-dark create" routerLink="/login" >Sign In</button>
+  
+      </div>
+    </div>
+  </div> -->
+
+
+<div class="login">
+    <div class="form">
+      <form class="login-form">
+        <span class="material-icons head">Library</span>
+        <input type="text" placeholder="name" required pattern="[a-z0-9._%+-]$" name="name" [(ngModel)]="userDetails.Name" required/>
+        <input type="text" placeholder="username" required pattern="[a-z0-9._%+-]$" name="username" [(ngModel)]="userDetails.userName" required/>
+        <input type="text" placeholder="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" [(ngModel)]="userDetails.email"required/>
+        <input type="password" placeholder="password" name="password" [(ngModel)]="userDetails.password" required />
+        <button class="loginBtn" (click)="onRegister()" >register</button>
+        <button class="register" routerLink="/login" >login</button>
+        </form>  
+    </div>
+  </div>
+
